@@ -48,9 +48,6 @@ public class Obstacle {
 
 	private void reset() {
 		
-		//vel = 2;
-		//pipeWidth = 100;
-		//gap = 200;
 		
 		topx = screenW;
 		topy = 0;

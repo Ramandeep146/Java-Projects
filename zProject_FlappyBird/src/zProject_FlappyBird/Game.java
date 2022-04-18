@@ -162,7 +162,7 @@ public class Game extends Canvas implements Runnable{
 
 	public void draw(Graphics g) {
 		
-		// Drawing the background
+		// Drawing the background so the images does not overlap
 		g.setColor(new Color(40,40,40));
 		g.fillRect(0,0,screenWidth,screenHeight);
 
