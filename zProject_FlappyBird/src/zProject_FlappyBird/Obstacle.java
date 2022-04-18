@@ -81,7 +81,7 @@ public class Obstacle {
 			&& birdy > 0 
 			&& birdy + 6 < topHeight) {
 			
-			Game.running = false;
+			Game.running=false;
 		}
 		
 		else if (   birdx > topx 
@@ -89,7 +89,7 @@ public class Obstacle {
 			&& birdy > 0 
 			&& birdy + 6 < topHeight) {
 			
-			Game.running = false;
+			Game.running=false;
 		}
 		
 		else if (   birdx + imageWidth > bottomx 
@@ -97,7 +97,7 @@ public class Obstacle {
 			&& birdy + imageHeight > bottomy 
 			&& birdy + imageHeight < screenH) {
 			
-			Game.running = false;
+			Game.running=false;
 		}
 		
 		else if (   birdx > bottomx 
@@ -105,7 +105,7 @@ public class Obstacle {
 			&& birdy + imageHeight > bottomy 
 			&& birdy + imageHeight < screenH) {
 			
-			Game.running = false;
+			Game.running=false;
 		} 
 
 	}

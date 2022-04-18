@@ -108,10 +108,20 @@ public class Game extends Canvas implements Runnable{
 			
 		}
 		
-		preDraw();
+		stop();
 
 	}
 	
+
+	void stop() {
+		try {
+			myThread.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		preDraw();
+	}
 
 	public void preDraw() {
 		
