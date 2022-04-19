@@ -10,12 +10,13 @@ public class MyFrame extends JFrame{
 	private static final long serialVersionUID = 1L;
 	
 	static MyPanel panel = new MyPanel();
+	static gameMenu game = new gameMenu();
 
 	MyFrame(){
 		
 		JPanel allPanels = new JPanel();
 		allPanels.setLayout(new BoxLayout(allPanels, BoxLayout.Y_AXIS));
-		allPanels.add(new gameMenu());
+		allPanels.add(game);
 		allPanels.add(panel);
 		
 		this.add(allPanels);
