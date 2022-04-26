@@ -148,7 +148,6 @@ public class MyPanel extends JPanel{
 		if(firstTurn) {
 			initializeValues(i,j);
 			firstTurn = false;
-			MyFrame.game.repaint();
 		}
 		
 		// Reveal all cells adjacent to cells with value = 0
@@ -271,8 +270,6 @@ public class MyPanel extends JPanel{
 		g.setFont(new Font("Times Roman", Font.ITALIC, 50));
 		FontMetrics metrics = getFontMetrics(g.getFont()); 
 		
-		g.setColor(new Color(120,120,120));
-		//g.fillRect(0,0,screenW,screenH);
 		g.setColor(new Color(200,0,0));
 		g.drawString("Game Over", 
 					 screenW/2 - metrics.stringWidth("Game Over")/2, 
@@ -288,6 +285,7 @@ public class MyPanel extends JPanel{
 				
 				update(i,j);
 				repaint();
+				MyFrame.game.repaint();
 			}
 		}
 	}
